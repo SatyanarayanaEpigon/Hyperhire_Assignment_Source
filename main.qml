@@ -192,35 +192,15 @@ ApplicationWindow
                 }
                 Label
                 {
-                    width:100
+                    width:125
                     Layout.fillWidth: true
                 }
-                Rectangle
+                Image
                 {
-                    width:30
-                    height: 30
-                    color:"#442848"
-                }
-                Rectangle
-                {
-                    width:30
-                    height: 30
-                    Image
-                    {
-                        source:"qrc:/images/Rectangle.png" // Replace with the path to your transparent image
-                        sourceSize.width: 30
-                        sourceSize.height: 30
-                        fillMode: Image.PreserveAspectFit
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter:  parent.verticalCenter
-
-                    }
-                }
-                Rectangle
-                {
-                    width:50
-                    height: 30
-                    color: "#301134"
+                    source:"qrc:/images/profile.png" // Replace with the path to your transparent image
+                    sourceSize.width: 70
+                    sourceSize.height: 20
+                    fillMode: Image.PreserveAspectFit
                 }
 
 
@@ -483,7 +463,7 @@ ApplicationWindow
                                     Rectangle
                                     {
                                         width: 270
-                                        height: 5
+                                        height: 15
                                         color:"#3F0F3F"
                                     }
                                     Rectangle
@@ -529,7 +509,7 @@ ApplicationWindow
                                     Rectangle
                                     {
                                         width: 270
-                                        height: 10
+                                        height: 15
                                         color:"#3F0F3F"
                                     }
 
@@ -537,7 +517,7 @@ ApplicationWindow
                                     {
                                         id:listView2
                                         width: 270
-                                        height: 200
+                                        height: 210
                                         model: ListModel
                                         {
                                             ListElement { text: "#  Channel-1"; }
@@ -556,7 +536,7 @@ ApplicationWindow
                                             Rectangle
                                             {
                                                 width: 270
-                                                height: 200
+                                                height: 210
                                                 color:"#3F0F3F"
                                                 anchors
                                                 {
@@ -594,7 +574,7 @@ ApplicationWindow
                                     Rectangle
                                     {
                                         width: 270
-                                        height: 40
+                                        height: 30
                                         color:"#3F0F3F"
                                         anchors
                                         {
@@ -630,7 +610,8 @@ ApplicationWindow
                                                 }
                                             }
 
-                                            Text {
+                                            Text
+                                            {
                                                 text: "Add Channels"
                                                 color:  "white"
                                                 verticalAlignment: Text.AlignVCenter
@@ -645,7 +626,13 @@ ApplicationWindow
                                     Rectangle
                                     {
                                         width: 270
-                                        height: 15
+                                        height: 10
+                                        color:"#3F0F3F"
+                                    }
+                                    Rectangle
+                                    {
+                                        width: 270
+                                        height: 25
                                         color:"#3F0F3F"
                                         anchors
                                         {
@@ -685,7 +672,7 @@ ApplicationWindow
                                     Rectangle
                                     {
                                         width: 270
-                                        height: 20
+                                        height: 5
                                         color:"#3F0F3F"
                                     }
                                     Rectangle
@@ -947,44 +934,48 @@ ApplicationWindow
                                         width:550
                                         height: 20
                                     }
-                                    Rectangle
+                                    RowLayout
                                     {
-                                        width: 20
-                                        height: 20
-                                        Image
+                                        spacing: -5
+                                        Rectangle
                                         {
-                                            source: "qrc:/images/Avatar7.png" // Replace with the path to your icon
                                             width: 20
                                             height: 20
-                                            fillMode: Image.PreserveAspectFit
-                                        }
+                                            Image
+                                            {
+                                                source: "qrc:/images/Avatar7.png" // Replace with the path to your icon
+                                                width: 20
+                                                height: 20
+                                                fillMode: Image.PreserveAspectFit
+                                            }
 
-                                    }
-                                    Rectangle
-                                    {
-                                        width: 20
-                                        height: 20
-                                        Image
+                                        }
+                                        Rectangle
                                         {
-                                            source: "qrc:/images/MAvatar.png" // Replace with the path to your icon
                                             width: 20
                                             height: 20
-                                            fillMode: Image.PreserveAspectFit
-                                        }
+                                            Image
+                                            {
+                                                source: "qrc:/images/MAvatar.png" // Replace with the path to your icon
+                                                width: 20
+                                                height: 20
+                                                fillMode: Image.PreserveAspectFit
+                                            }
 
-                                    }
-                                    Rectangle
-                                    {
-                                        width: 20
-                                        height: 20
-                                        Image
+                                        }
+                                        Rectangle
                                         {
-                                            source: "qrc:/images/MAvatar2.png" // Replace with the path to your icon
                                             width: 20
                                             height: 20
-                                            fillMode: Image.PreserveAspectFit
-                                        }
+                                            Image
+                                            {
+                                                source: "qrc:/images/MAvatar2.png" // Replace with the path to your icon
+                                                width: 20
+                                                height: 20
+                                                fillMode: Image.PreserveAspectFit
+                                            }
 
+                                        }
                                     }
                                     Label
                                     {
@@ -1015,7 +1006,7 @@ ApplicationWindow
                                         height: 20
                                         Image
                                         {
-                                            source: "qrc:/images/Star.png" // Replace with the path to your icon
+                                            source: "qrc:/images/Group.png" // Replace with the path to your icon
                                             width: 20
                                             height: 20
                                             fillMode: Image.PreserveAspectFit
